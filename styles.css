@@ -706,16 +706,16 @@ body {
 
 .discount-ratings {
   display: flex;
-  min-width: 0;
-  justify-content: space-between;
+  max-width: 100%;
+  justify-content: center;
   gap: 10px;
   position: relative;
   bottom: 10px;
 }
 
 .discount1 {
-  width: auto;
-  max-width: 100%;
+  width: 100%;
+  margin-left: 5px;
   overflow-wrap: break-word;
   height: 249px;
   padding: 28px;
@@ -806,7 +806,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
-  width: auto;
+  width: 100%;
   height: 249px;
   padding: 47px 28px;
   border-radius: 22px;
@@ -1085,7 +1085,7 @@ span {
   color: #8E9C8C;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .discount-ratings {
     display: flex;
     flex-direction: column;
@@ -1138,7 +1138,7 @@ span {
 
   .copywrite {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     gap: 20px;
     padding: 20px 40px 0 40px;
@@ -1147,13 +1147,7 @@ span {
   }
 
   .copywrite p,
-    span {
-      font-size: 8px;
-    }
-}
-
-@media(max-width:1250px) {
-  .discount-ratings{
-    gap: 10px;
+  span {
+    font-size: 8px;
   }
 }
